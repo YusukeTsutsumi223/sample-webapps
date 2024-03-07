@@ -9,9 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      REGISTRY_NAME: ${{ tsutsumisamplewebappcontainerregistry }} # {mycontainer}.azurecr.io
-      USERNAME: ${{ TsutsumiSampleWebAppContainerRegistry }}
-      PASSWORD: ${{ wDoQUGz38dIemIwqUCakcgJCQZXmQERlpsEXyLgwmf+ACRDnnF+8 }}
+      REGISTRY_NAME: ${{ secrets.REGISTRY_NAME }} # {mycontainer}.azurecr.io
+      USERNAME: ${{ secrets.REGISTRY_USERNAME }}
+      PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
       IMAGE_NAME: sample-django-webapps
     steps:
     - uses: actions/checkout@v2
