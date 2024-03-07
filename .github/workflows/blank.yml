@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      REGISTRY_NAME: ${{ TsutsumiSampleWebAppContainerRegistry }} # {mycontainer}.azurecr.io
+      REGISTRY_NAME: ${{ tsutsumisamplewebappcontainerregistry }} # {mycontainer}.azurecr.io
       USERNAME: ${{ TsutsumiSampleWebAppContainerRegistry }}
       PASSWORD: ${{ wDoQUGz38dIemIwqUCakcgJCQZXmQERlpsEXyLgwmf+ACRDnnF+8 }}
       IMAGE_NAME: sample-django-webapps
